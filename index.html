@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<style>
+html, body{ width:100%; height:100%; }
+*{ margin:0; } 
+.box{
+background:#ffd;
+width:100%; height:100%;
+}
+</style>
+	<link rel="stylesheet" href="/style.css">
+
+	
+	<title>ページタイトル</title>
+	
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+
+<script>
+jQuery(document).ready(function() {
+var offset = 100;
+var duration = 500;
+jQuery(window).scroll(function() {
+if (jQuery(this).scrollTop() > offset) {
+jQuery('.pagetop').fadeIn(duration);
+} else {
+jQuery('.pagetop').fadeOut(duration);
+}
+});
+
+jQuery('.pagetop').click(function(event) {
+event.preventDefault();
+jQuery('html, body').animate({scrollTop: 0}, duration);
+return false;
+})
+});
+</script>
+	
+	
+	
+</head>
+<body>
+	<div class="gg">
+		<a href="#top" class="box1">Haruka's Portfolio</a>
+		
+	
+	
+
+
+		<div class="aa">
+			<a href="#works" class="works">WORKS</a>
+			<a href="#about" class="about">ABOUT</a>
+		</div>
+	</div>
+	<div id="top"></div>
+
+
+	<br>
+	<br>
+	
+	
+	
+
+	<div class="mainv">
+		<img class="main" src="img/IMG_2505.jpg">
+
+
+		<img class="メイン文" src="img/アートlード 1.png">
+		
+	
+
+	</div>
+<br>
+	<br>
+	<br>
+
+	<div class="wo">
+		<h2>
+			<div id="works">WORKS</div>
+		</h2>
+	</div>
+	<br>
+
+
+	<div class="を">
+
+	<div class="m1">
+			
+			<a class="sai" href="wo1.html">
+         <img class="ff" src="img/名称未設h定-2.png">
+     </a>
+
+
+			<div class="w1">
+
+				<div class="w１a">
+					彩 お酒と楽しむチョコレート
+				</div>
+				<div class="w1b">
+					お菓子のパッケージデザイン
+				</div>
+      
+			</div>
+		</div>
+		
+		<div class="m1">
+			
+			<a class="sai" href="wo2.html">
+         <img src="img/スクリーンショット 2023-12-25 12.26.png">
+     </a>
+
+
+			<div class="w1">
+
+				<div class="w１a">
+					LinkMusic
+				</div>
+				<div class="w1b">
+					架空のスマホアプリのUIデザイン
+				</div>
+      
+			</div>
+		</div>
+		
+		<div class="m1">
+			
+			<a class="sai" href="wo3.html">
+         <img src="img/IMG_1951.jpg">
+     </a>
+
+
+			<div class="w1">
+
+				<div class="w１a">
+					DesignMuseum
+				</div>
+				<div class="w1b">
+					架空のミュージアムのロゴデザイン等
+				</div>
+      
+			</div>
+		</div>
+		
+</div>
+	
+	
+	
+	
+	
+	<div class="を２">
+		
+		<div class="m1">
+			
+			<a class="sai" href="wo4.html">
+         <img class="ff" src="img/名称未m設定-2.png">
+     </a>
+
+
+			<div class="w1">
+
+				<div class="w１a">
+					ジビエの世界
+				</div>
+				<div class="w1b">
+					インフォグラフィックス、モーション
+				</div>
+      
+			</div>
+		</div>
+		
+		<div class="m1">
+			
+			<a class="sai" href="wo5.html">
+         <img class="ff" src="img/スクリーンショット 2024-01-12 3.58.55.png">
+     </a>
+
+
+			<div class="w1">
+
+				<div class="w１a">
+					青に溺れる
+				</div>
+				<div class="w1b">
+					架空の映画のデザイン
+				</div>
+      
+			</div>
+		</div>
+		
+		<div class="m1">
+			
+			<a class="sai" href="wo6.html">
+         <img src="img/無題214_20ll231231145912.png">
+     </a>
+
+
+			<div class="w1">
+
+				<div class="w１a">
+					2024年賀
+				</div>
+				<div class="w1b">
+					自主制作イラスト
+				</div>
+      
+			</div>
+		</div>
+		
+		
+		
+	
+	</div>
+
+
+
+<br>
+	
+
+	<div class="ab">
+		<h2>
+			<div id="about">ABOUT</div>
+		</h2>
+
+		
+	</div>
+
+	
+	<br>
+	<div class="aba">
+
+		<img class="abp" src="img/beauty_1692939142725 2.png">
+
+
+
+		<div class="abb">
+			<h４>諸田晴香</h４>	 <br>
+千葉県出身 1月3日生まれ <br>
+			<br>
+		趣味：音楽鑑賞 バンドやったりライブ行くのが好き。
+			
+
+		</div>
+	
+	</div>
+	
+	<br>
+
+<div class="foot">
+	
+	<br>
+
+	
+	© ks Portfolio
+	<br>
+	
+	
+	</div>
+
+	
+	 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script>
+    $(document).on("click", "a[href^='#']", (event) => {
+      event.preventDefault()
+      const id = decodeURI(event.target.closest("a").hash)
+      const target = $(id)
+      if(target.length === 0) {
+        return
+      }
+      const y = target.offset().top
+      const offset = 0
+      $("html, body").animate({ scrollTop: y - offset }, 400)
+    })
+  </script>
+
+
+
+
+<div class="pagetop">↑</div>
+</body>
+</html>
